@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 : tryRemoveFromArray</title>
+</head>
+<body>
+<script>
+    let result = [];
+    function tryRemoveFromArray(array,x) {
+        for (let i =0 ; i < array.length;i++) {
+            if (array[i] != x) {
+                result.push(array[i]);
+            };
+        }
+        document.write(result);
+    }
+    let array1 = [0,1,2,3,4,3,2,4,24,5,23,342];
+    tryRemoveFromArray(array1,10);
+    tryRemoveFromArray(array1,2);
+</script>
+</body>
+</html>

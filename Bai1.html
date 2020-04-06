@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1 : findMax</title>
+</head>
+<body>
+<script>
+    let max;
+    function findMax(array) {
+        max = array[0];
+        for (let i = 1; i< array.length; i++) {
+            if (max < array[i]) {
+                max = array[i]
+            }
+        }
+        document.write('Điểm thi cao nhất là : ' + max)
+    }
+    let diemthi = [7,8,9,10,4,5];
+    findMax(diemthi);
+</script>
+</body>
+</html>
