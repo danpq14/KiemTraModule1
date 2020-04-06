@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bai3</title>
 </head>
 <body>
-
+<script>
+    function isFibonacci(number) {
+     let result = false;
+     let a = 0;
+     let b = 1;
+     let t;
+     for (let i = 0 ; i<=number;i++) {
+         t = a + b;
+         a = b;
+         b = t ;
+         if (number == t || number == a || number == b || number == 0 ) {
+             result = true;
+         }
+       }
+       document.write(result);
+    }
+    isFibonacci(233);
+    isFibonacci(5);
+    isFibonacci(1000);
+</script>
 </body>
 </html>
